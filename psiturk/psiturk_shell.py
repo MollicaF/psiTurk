@@ -98,7 +98,7 @@ class PsiturkNetworkShell(Cmd, object):
                 if not self.quiet:
                     message = '{}{}'.format(message, still_can_do)
                 self.perror(message)
-                sys.exit()
+                #sys.exit()
             except PsiturkException as e:
                 self.poutput(e)
 
